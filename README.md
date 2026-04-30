@@ -18,7 +18,6 @@
   <li><b>Framework:</b> ASP.NET Core MVC</li>
   <li><b>Database Tool:</b> Entity Framework Core (Code First)</li>
   <li><b>Database:</b> SQL Server</li>
-  <li><b>Design:</b> Entity Relationship Diagram (ERD)</li>
 </ul>
 
 
