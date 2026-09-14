@@ -1,13 +1,13 @@
-﻿using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
+﻿using System.Text.Json.Serialization;
 
 namespace IrohBooks.Models
 {
     public class Genre
     {
         public int GenreId { get; set; }
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
-        [ValidateNever]
-        public ICollection<ProductGenre> ProductGenres { get; set; }
+        [JsonIgnore]
+        public ICollection<ProductGenre>? ProductGenres { get; set; }
     }
 }
